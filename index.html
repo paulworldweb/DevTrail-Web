@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+    <!-- header section -->
+     <div id="header">
+        <header class="site-header" id="site-header">
+            <div class="brand">
+                <h1>DevTrail Web</h1>
+                <p class="tagline">Mobile-first websites</p>
+            </div>
+            <a href="#site-footer">Take me footer</a>
+
+            <!-- Hamburger toggle (CSS-ONLY) -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle"/>
+            <label for="nav-toggle" class="hamburger" aria-label="Open navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation section -->
+            <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+
+                <ul>
+                    <li <a href="index.html">Home &nbsp;</a></li>
+                    <li <a href="#" title="Placeholder link">About &nbsp;</a></li>
+                    <li <a href="#" title="Placeholder link">Services &nbsp;</a></li>
+                    <li <a href="#" title="Placeholder link">Contact</a></li>
+                    
+                </ul>
+                
+
+            </nav>
+
+            
+        </header>   
+    </div>
+     
+
+     <!-- Main Content -->
+    <main id="main-content">
+
+            <!-- Hero Section -->
+             <section>
+
+                    <div class="hero-text">
+                        <h2 id="hero-header">Build a clean, responsive website</h2>
+                        <p>
+                            DevTrail Web helps small business launch modern website that look great on phones,
+                            tablets, and desktops &trade;.
+                        </p>
+                        <a class="btn" href="#" title="Placeholder link">Get a Free Quote</a>
+
+                    </div>
+
+                    <img class="responsive-img" src="images/hero.png" 
+                    alt="A laptop on a desk showing a website design" />
+
+             </section>
+
+             <!-- Service section -->
+              <section class="content" aria-labelledby="services-heading"  >
+
+                    <h2 id="services-heading">Our Services</h2>
+                    <ul class="services">
+
+                        <li>Semantic HTML5 page structure</li>
+                        <li>Responsive CSS layouts (mobile-first)</li>
+                        <li>Image optimization and accessibility</li>
+                        <li>Basic site maintenance & updates</li>
+
+                    </ul>
+
+              </section>
+
+                <!-- Featured Work Section -->
+                <section class="content" aria-labelledby="work-heading">
+
+                    <h2 id="work-heading">Featured Work</h2>
+                    <p>
+                        Here are sample visuals that represent web development work and planning.
+                    </p>
+
+                    <div class="gallery">
+
+                        <img class="responsive-img" src="images/sample1.png" 
+                        alt="Code editor on a screen"/>
+                        <img class="responsive-img" src="images/sample2.png" 
+                        alt="Website wireframe sketch on paper"/>
+
+                    </div>
+
+               </section>
+    </main>
+
+    <footer class="site-footer" id="site-footer">
+
+        <!-- Footer section -->
+         <p>&copy; 2026 DevTrail Web. All rights reserved.</p>
+         <p>
+            Email: <a href="mailtto:devtrailweb@example.com">devtrailweb@example.com</a>
+            &#124; Phone: <a href="tel:123456780">(123)-456-7890</a>
+         </p>
+
+         <a href="#header">Take me top</a>
+
+    </footer>
+</body>
+</html>

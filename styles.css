@@ -1,0 +1,247 @@
+/* =========== Base / Mobile-First Styles ============ */
+
+:root {
+    --text: #1f2937;                 /* HEX */
+    --muted: rgb(100, 116, 139);     /* RGB */
+    --accent: hsl(210, 90%, 45%);    /* HSL */
+    --bg: #ffffff;  
+    --soft: rgb(241, 245, 249);
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: system-ui, Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.5;
+    background-color: rgb(170, 170, 141);
+}
+
+
+/* Responsive images (required) */
+.responsive-img,
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Header */
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--soft);
+    border-bottom: 1px solid rgb(226, 232, 240);
+}
+
+
+.brand h1 {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+
+.tagline {
+    margin: 0.25rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+
+/* Nav */
+.site-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.5rem;
+}
+
+
+/* Touch target size (required) */
+.site-nav a,
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1rem;           /* >= 44px tall in most default fonts */
+    border-radius: 0.5rem;
+}
+
+
+/* Hamburger (CSS-only) */
+.nav-toggle {
+    position: absolute;
+    left: -9999px;
+}
+
+
+.hamburger {
+    outline: 3px;
+    position: relative;
+    z-index: 9999;
+    width: 44px;
+    height: 44px;         /* touch target */
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    background: #fff;
+    border: 1px solid rgb(226, 232, 240);
+}
+
+
+.hamburger span {
+    width: 22px;
+    height: 2px;
+    background: var(--text);
+    display: block;
+    margin: 2px 0;
+}
+
+
+/* Hide nav on mobile by default */
+.site-nav {
+    display: none;
+    position: absolute;
+    top: 72px;
+    right: 1rem;
+    background: white;
+    border: 1px solid rgb(226, 232, 240);
+    border-radius: 0.75rem;
+    padding: 0.75rem;
+    width: min(8vw, 260px);    /* relative unit vw */
+    box-shadow: 0 10px 25px rgb(0, 0, 0.08);
+}
+
+
+/* Show nav when checkbox is checked */
+.nav-toggle:checked ~ .site-nav {
+    display: block;
+}
+
+
+/* Main layer */
+main {
+    padding: 1rem;
+}
+
+
+
+.hero {
+    display: grid;
+    gap: 1rem;
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid rgb(226, 232, 240);
+    border-radius: 1rem;
+}
+
+
+.btn {
+    background: var(--accent);
+    color: white;
+    margin-top: 0.5rem;
+}
+
+
+
+.content {
+    margin-top: 1.25rem;
+    padding: 1rem;
+    background: #fff;
+    border: 1px solid rgb(226, 232, 240);
+    border-radius: 1rem;
+}
+
+
+.services {
+    margin: 0.75rem;
+}
+
+
+.gallery {
+    display: grid;
+    gap: 1rem;
+    margin-top: 0.75rem;
+}
+
+
+/* Footer */
+.site-footer {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: var(--soft);
+    border-top: 1px solid rgb(226, 232, 240);
+    font-size: 0.95rem;
+    color: var(--muted);
+}
+
+
+/* =========== Breakpoint 1: Table (>= 768px) =========*/
+@media (min-width: 768px) {
+
+    /* Make nav horizontal and visible */
+    .hamburger {
+        display: none;
+    }
+
+    .site-nav {
+        position: static;
+        display: block;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        width: auto;
+    }
+
+    .site-nav ul {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+
+    .hero {
+        grid-template-columns: 1.2fr 1fr;
+        align-items: center;
+    }
+
+
+    main {
+        padding: 1.5rem;
+    }
+}
+
+
+/* ========== Breakpoint 2: Desktop (>= 1024px) ======= */
+@media (min-width: 1024px) {
+    body {
+        font-size: 1.05rem;
+    }
+
+    main {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+}
