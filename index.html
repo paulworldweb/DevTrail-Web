@@ -1,116 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Website</title>
-    <link rel="stylesheet" href="styles.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevTrail | Software Development Solutions</title>
+  <meta
+    name="description"
+    content="DevTrail builds modern websites, web applications, and scalable software solutions for startups, businesses, and growing brands."
+  />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
 </head>
-
 <body>
-    <!-- header section -->
-     <div id="header">
-        <header class="site-header" id="site-header">
-            <div class="brand">
-                <h1>DevTrail Web</h1>
-                <p class="tagline">Mobile-first websites</p>
-            </div>
-            <a href="#site-footer">Take me footer</a>
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="#" class="logo">
+          <span class="logo-mark">DT</span>
+          <span class="logo-text">DevTrail</span>
+        </a>
 
-            <!-- Hamburger toggle (CSS-ONLY) -->
-            <input type="checkbox" id="nav-toggle" class="nav-toggle"/>
-            <label for="nav-toggle" class="hamburger" aria-label="Open navigation menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-            <!-- Navigation section -->
-            <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
 
-                <ul>
-                    <li <a href="index.html">Home &nbsp;</a></li>
-                    <li <a href="#" title="Placeholder link">About &nbsp;</a></li>
-                    <li <a href="#" title="Placeholder link">Services &nbsp;</a></li>
-                    <li <a href="#" title="Placeholder link">Contact</a></li>
-                    
-                </ul>
-                
-
-            </nav>
-
-            
-        </header>   
+        <a href="#contact" class="nav-button">Start Project</a>
+      </nav>
     </div>
-     
+  </header>
 
-     <!-- Main Content -->
-    <main id="main-content">
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-layout">
+        <div class="hero-content">
+          <p class="eyebrow">Software Development • Web Applications • Digital Solutions</p>
+          <h1>Modern Software Solutions Built for Real Business Growth</h1>
+          <p class="hero-text">
+            DevTrail helps startups, businesses, and growing brands build fast,
+            reliable, and scalable digital products — from websites to custom web applications.
+          </p>
 
-            <!-- Hero Section -->
-             <section>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Start a Project</a>
+            <a href="#projects" class="btn btn-secondary">View Work</a>
+          </div>
 
-                    <div class="hero-text">
-                        <h2 id="hero-header">Build a clean, responsive website</h2>
-                        <p>
-                            DevTrail Web helps small business launch modern website that look great on phones,
-                            tablets, and desktops &trade;.
-                        </p>
-                        <a class="btn" href="#" title="Placeholder link">Get a Free Quote</a>
+          <div class="hero-stats">
+            <div class="stat-card">
+              <h3>Clean Code</h3>
+              <p>Built with maintainable and scalable structure.</p>
+            </div>
+            <div class="stat-card">
+              <h3>Responsive UI</h3>
+              <p>Looks great on desktop, tablet, and mobile.</p>
+            </div>
+            <div class="stat-card">
+              <h3>Modern Stack</h3>
+              <p>Front-end and software solutions for today’s needs.</p>
+            </div>
+          </div>
+        </div>
 
-                    </div>
+        <div class="hero-image">
+          <img src="images/hero.png" alt="DevTrail software development hero image" />
+        </div>
+      </div>
+    </section>
 
-                    <img class="responsive-img" src="images/hero.png" 
-                    alt="A laptop on a desk showing a website design" />
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Services</p>
+          <h2>What DevTrail Builds</h2>
+          <p>
+            We create software-driven digital solutions that help businesses work smarter,
+            look more professional, and grow online.
+          </p>
+        </div>
 
-             </section>
+        <div class="card-grid">
+          <article class="service-card">
+            <div class="card-icon">01</div>
+            <h3>Business Websites</h3>
+            <p>
+              Clean and professional websites built to present your brand, services,
+              and business information with confidence.
+            </p>
+          </article>
 
-             <!-- Service section -->
-              <section class="content" aria-labelledby="services-heading"  >
+          <article class="service-card">
+            <div class="card-icon">02</div>
+            <h3>Web Applications</h3>
+            <p>
+              Interactive web apps for dashboards, internal tools, client portals,
+              and custom digital workflows.
+            </p>
+          </article>
 
-                    <h2 id="services-heading">Our Services</h2>
-                    <ul class="services">
+          <article class="service-card">
+            <div class="card-icon">03</div>
+            <h3>UI & Front-End Development</h3>
+            <p>
+              Responsive and user-friendly interfaces designed to create a smooth
+              experience across all screen sizes.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-                        <li>Semantic HTML5 page structure</li>
-                        <li>Responsive CSS layouts (mobile-first)</li>
-                        <li>Image optimization and accessibility</li>
-                        <li>Basic site maintenance & updates</li>
+    <section class="about section" id="about">
+      <div class="container about-layout">
+        <div class="about-text">
+          <p class="section-label">About DevTrail</p>
+          <h2>Development That Combines Design, Function, and Business Value</h2>
+          <p>
+            DevTrail is focused on building software solutions that are not only visually
+            strong, but also practical, scalable, and useful for real business needs.
+          </p>
+          <p>
+            From landing pages to full web applications, the goal is to create digital
+            products that solve problems, support growth, and give businesses a stronger online presence.
+          </p>
+        </div>
 
-                    </ul>
+        <div class="about-box">
+          <h3>Why Choose DevTrail</h3>
+          <ul>
+            <li>Modern and responsive development</li>
+            <li>Clean and organized structure</li>
+            <li>Business-focused solutions</li>
+            <li>Scalable project foundation</li>
+            <li>Simple and professional user experience</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-              </section>
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Projects</p>
+          <h2>Sample Project Areas</h2>
+          <p>
+            DevTrail can be used for portfolios, business websites, dashboards,
+            and custom development solutions.
+          </p>
+        </div>
 
-                <!-- Featured Work Section -->
-                <section class="content" aria-labelledby="work-heading">
+        <div class="card-grid">
+          <article class="project-card">
+            <h3>Startup Website</h3>
+            <p>
+              A professional business site for startups that need a modern online presence.
+            </p>
+            <a href="#contact">Build Something Similar</a>
+          </article>
 
-                    <h2 id="work-heading">Featured Work</h2>
-                    <p>
-                        Here are sample visuals that represent web development work and planning.
-                    </p>
+          <article class="project-card">
+            <h3>Admin Dashboard</h3>
+            <p>
+              A software interface for managing internal data, projects, or business processes.
+            </p>
+            <a href="#contact">Request a Demo Style</a>
+          </article>
 
-                    <div class="gallery">
+          <article class="project-card">
+            <h3>Custom Client Portal</h3>
+            <p>
+              A tailored solution where users can access information, submit data, or manage services.
+            </p>
+            <a href="#contact">Discuss Your Idea</a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-                        <img class="responsive-img" src="images/sample1.png" 
-                        alt="Code editor on a screen"/>
-                        <img class="responsive-img" src="images/sample2.png" 
-                        alt="Website wireframe sketch on paper"/>
+    <section class="contact section" id="contact">
+      <div class="container contact-box">
+        <div class="section-header">
+          <p class="section-label center">Contact</p>
+          <h2 class="center">Let’s Build Your Next Software Project</h2>
+          <p class="center">
+            Ready to create a modern website or software solution for your business?
+            Let’s talk about your idea.
+          </p>
+        </div>
 
-                    </div>
+        <div class="contact-layout">
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" />
+            </div>
 
-               </section>
-    </main>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" />
+            </div>
 
-    <footer class="site-footer" id="site-footer">
+            <div class="form-group">
+              <label for="message">Project Details</label>
+              <textarea id="message" name="message" placeholder="Tell us about your project"></textarea>
+            </div>
 
-        <!-- Footer section -->
-         <p>&copy; 2026 DevTrail Web. All rights reserved.</p>
-         <p>
-            Email: <a href="mailtto:devtrailweb@example.com">devtrailweb@example.com</a>
-            &#124; Phone: <a href="tel:123456780">(123)-456-7890</a>
-         </p>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
 
-         <a href="#header">Take me top</a>
+          <div class="contact-details">
+            <h3>DevTrail</h3>
+            <p><strong>Email:</strong> your@email.com</p>
+            <p><strong>Focus:</strong> Software Development & Web Solutions</p>
+            <p><strong>Availability:</strong> Open for freelance and client projects</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    </footer>
+  <footer class="site-footer">
+    <div class="container footer-layout">
+      <div class="footer-brand">
+        <h3>DevTrail</h3>
+        <p>Modern software development solutions for businesses and growing brands.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>your@email.com</p>
+        <p>Software Development Solutions</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 DevTrail. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
