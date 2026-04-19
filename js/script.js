@@ -24,5 +24,5 @@ document.addEventListener("DOMContentLoaded", () => {
         menuToggle.setAttribute("aria-expanded", "false");
       });
     });
-  });
+  }
 });
